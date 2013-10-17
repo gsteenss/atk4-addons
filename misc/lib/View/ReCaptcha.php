@@ -11,7 +11,7 @@ class View_ReCaptcha extends View_HtmlElement{
 		$this->__publicKey  = $this->api->getConfig('recaptcha/publickey');
 		$this->__privateKey = $this->api->getConfig('recaptcha/privatekey');
 		$this->check();
-		$this->set($this->getHtml());
+		$this->setHtml($this->getHtml());
 	}
 	function isValid(){
 		return $this->__isValid;
